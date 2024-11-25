@@ -1,56 +1,77 @@
-<!doctype html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="data/css/style.css">
-    <link rel="stylesheet" href="data/css/sidebar.css">
-    <!--Title page untuk websitenya-->
-    <title>SETHORN | Template Website Faisal</title>
-    <!---Icon page Websitenya-->
-    <link rel="shortcut icon" href="data/files/img/icon.ico">
-  </head>
-  <body>
-    <header class="header">
-      <div class="menu">
-        <ul>
-          <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-             <!---Pilihan Listnya-->
-            <li><button class="list-button"><a href="index.html">Home</a></button></li>
-            <li><button class="list-button"><a href="data/login.html">Login</a></button></li>
-            <button class="dropdown-button">
-                <a href="#documents">Documents</a>
-            </button>
-            <ul class="list-dropdown">
-              <div class="sublist"><a href="#img">Images</a></div>
-              <div class="sublist"><a href="#pdf">PDF</a></div>
-              <div class="sublist"><a href="#videos">Videos</a></div>
-          </ul>
-            
-          </div>
-          <div class="sorrow">
-            <input class="searcher" type="text" placeholder="Search..." />
-          </div>
-          
-          <div id="main">
-            <button class="openbtn" onclick="openNav()">☰</button> 
-          </div>
-          
-          <script>
-          function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-          }
-          
-          function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-          }
-          </script>
-         
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile Modern</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="topbar">
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="logo" id="logo">Company</div>
+        <div class="nav-links" id="nav-links">
+            <a href="#">Beranda</a>
+            <a href="#">Tentang</a>
+            <a href="#">Layanan</a>
+            <a href="#">Blog</a>
+            <a href="#">Kontak</a>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn daftar">Daftar</a>
+            <a href="#" class="btn masuk">Masuk</a>
+        </div>
+    </div>
 
-        </ul>
-      </div>
-    </header>
-  </body>
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?fit=crop&w=1200&q=80" alt="Hero Image" class="hero-image">
+        <div class="hero-text">
+            <h1>Membangun Masa Depan yang Lebih Cerah</h1>
+            <p>Kami hadir untuk memberikan solusi yang inovatif dan efektif untuk masa depan bisnis Anda.</p>
+            <a href="#" class="btn primary-btn">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Layanan Kami</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?fit=crop&w=300&q=80" alt="Layanan 1">
+                <h3>Konsultasi Bisnis</h3>
+                <p>Wawasan mendalam untuk membantu bisnis Anda tumbuh di era kompetitif ini.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?fit=crop&w=300&q=80" alt="Layanan 2">
+                <h3>Solusi Teknologi</h3>
+                <p>Optimalkan bisnis Anda dengan teknologi yang revolusioner.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?fit=crop&w=300&q=80" alt="Layanan 3">
+                <h3>Pengembangan Produk</h3>
+                <p>Transformasi produk dari ide menjadi kenyataan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>Tentang Kami</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Dengan pengalaman lebih dari 20 tahun, kami membantu bisnis di berbagai sektor dengan inovasi dan efisiensi maksimal.</p>
+                <p>Kami terus berinovasi untuk memberikan solusi terbaik bagi para klien kami.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?fit=crop&w=600&q=80" alt="Tentang Kami">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Perusahaan Anda. Semua hak dilindungi undang-undang.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
